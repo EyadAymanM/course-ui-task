@@ -16,6 +16,8 @@ function Nav() {
         <ul className="list-none flex gap-4 h-full">
           {navElements.map(l => <Link key={l.name} to={{ pathname: l.link }}><li className={`hover:bg-[#F5C4AD] duration-200 p-2 ${pathname == l.link ?'bg-[#fbded1] shadow':''}`}>{l.name}</li></Link>)}
         </ul>
+        <div className="grow" />
+        <Link className="hover:bg-[#F5C4AD] duration-200 p-2 me-2" to={'/login'}>Login</Link>
       </nav>
     </div>
   )
